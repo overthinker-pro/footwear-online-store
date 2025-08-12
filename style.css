@@ -371,14 +371,10 @@ section {
 
 /* Mobile devices */
 @media (max-width: 768px) {
-    .site-header .container {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
     .site-header__actions {
         order: 3;
         width: 100%;
+        gap: 40px;
         justify-content: flex-end;
     }
 
