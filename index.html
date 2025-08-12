@@ -12,8 +12,139 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <!-- fontawesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/c61501f624.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Footwear Online Store</title>
   </head>
   <body>
+    <header class="site-header">
+      <div class="container">
+        <a href="/" class="site-header__logo">Footwear</a>
+        <nav class="site-header__nav" aria-label="Main Navigation">
+          <ul>
+            <li><a href="/men">Men</a></li>
+            <li><a href="/women">Women</a></li>
+            <li><a href="/kids">Kids</a></li>
+            <li><a href="/sale">Sale</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__actions">
+          <form action="/search" class="search-form" role="search">
+            <label for="search-input" class="sr-only"
+              >Search for products</label
+            >
+            <input
+              id="search-input"
+              type="search"
+              name="q"
+              placeholder="Search..."
+            />
+            <button type="submit" aria-label="Submit search">Search</button>
+          </form>
+          <a
+            href="/cart"
+            class="cart-link"
+            aria-label="Shopping Cart with 0 items"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Cart (0)</span>
+          </a>
+          <a href="/account" class="account-link" aria-label="My Account">
+            <i class="fa-solid fa-user"></i>
+            <span>Account</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="hero__content">
+            <h1 id="hero-title" class="hero__title">Step Into Style</h1>
+            <p class="hero__subtitle">
+              Discover our latest collection of premium footwear.
+            </p>
+            <a href="/new-arrivals" class="btn btn--primary">Shop Now</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products Section -->
+      <section
+        class="featured-products"
+        aria-labelledby="featured-products-title"
+      >
+        <div class="container">
+          <h2 id="featured-products-title" class="section-title">
+            Featured Products
+          </h2>
+          <div class="product-grid">
+            <!-- Product Card 1 -->
+            <article class="product-card">
+              <a href="/product/classic-sneaker">
+                <img
+                  src="https://via.placeholder.com/300x300.png?text=Classic+Sneaker"
+                  alt="A pair of classic white sneakers."
+                  class="product-card__image"
+                />
+                <div class="product-card__info">
+                  <h3 class="product-card__name">Classic Sneaker</h3>
+                  <p class="product-card__price">$89.99</p>
+                </div>
+              </a>
+              <button class="btn btn--secondary">Add to Cart</button>
+            </article>
+
+            <!-- Product Card 2 -->
+            <article class="product-card">
+              <a href="/product/leather-boot">
+                <img
+                  src="https://via.placeholder.com/300x300.png?text=Leather+Boot"
+                  alt="A stylish brown leather boot."
+                  class="product-card__image"
+                />
+                <div class="product-card__info">
+                  <h3 class="product-card__name">Leather Boot</h3>
+                  <p class="product-card__price">$149.99</p>
+                </div>
+              </a>
+              <button class="btn btn--secondary">Add to Cart</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter/Promo Section -->
+      <section class="promo-section" aria-labelledby="promo-title">
+        <div class="container">
+          <h2 id="promo-title">Join Our Newsletter</h2>
+          <p>
+            Get 15% off your first order and stay up-to-date with our latest
+            arrivals.
+          </p>
+          <form class="newsletter-form">
+            <label for="email-signup" class="sr-only">Email address</label>
+            <input
+              type="email"
+              id="email-signup"
+              placeholder="Enter your email"
+            />
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Footwear Online Store | Developed by <a href="https://overthinker-studio.netlify.app">Overthinker Studio</a></p>
+      </div>
+    </footer>
   </body>
 </html>
