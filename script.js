@@ -37,6 +37,26 @@ if (searchForm && searchInput && productGrid) {
     searchForm.addEventListener('submit', (event) => event.preventDefault());
 }
 
+// --- Cart Functionality ---
+const addToCartButtons = document.querySelectorAll('.product-card .btn--secondary');
+const cartLink = document.querySelector('.cart-link');
+const cartCountSpan = document.getElementById('cart-count');
+
+if (addToCartButtons.length > 0 && cartLink && cartCountSpan) {
+    const initialCartText = cartCountSpan.textContent;
+    const match = initialCartText.match(/\((\d+)\)/);
+    let cartItemCount = match ? parseInt(match[1], 10) : 0;
+
+    const handleAddToCartClick = () => {
+        cartItemCount++;
+        cartCountSpan.textContent = `Cart (${cartItemCount})`;
+        cartLink.setAttribute('aria-label', `Shopping Cart with ${cartItemCount} items`);
+    };
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', handleAddToCartClick);
+    });
+}
 
 
 document.getElementById("year").textContent = new Date().getFullYear();
