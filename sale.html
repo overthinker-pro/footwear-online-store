@@ -17,7 +17,7 @@
       src="https://kit.fontawesome.com/c61501f624.js"
       crossorigin="anonymous"
     ></script>
-    <title>Footwear Online Store</title>
+    <title>Sale - Footwear Online Store</title>
   </head>
   <body>
     <header class="site-header">
@@ -62,29 +62,51 @@
 
     <!-- Main Content -->
     <main>
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="collection" aria-labelledby="collection-title">
         <div class="container">
-          <div class="hero__content">
-            <h1 id="hero-title" class="hero__title">Step Into Style</h1>
-            <p class="hero__subtitle">
-              Discover our latest collection of premium footwear.
-            </p>
-            <a href="#" class="btn btn--primary">Shop Now</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Featured Products Section -->
-      <section
-        class="featured-products"
-        aria-labelledby="featured-products-title"
-      >
-        <div class="container">
-          <h2 id="featured-products-title" class="section-title">
-            Featured Products
-          </h2>
+          <h1 id="collection-title" class="section-title">
+            Ongoing Sale Products
+          </h1>
           <div class="product-grid">
-            <!-- Product Card 1 -->
+            <!-- Product Card 1: Men's Loafer on Sale -->
+            <article class="product-card">
+              <a href="#">
+                <img
+                  src="products/men-loafer.jpg"
+                  alt="A pair of casual brown loafers."
+                  class="product-card__image"
+                />
+                <div class="product-card__info">
+                  <h3 class="product-card__name">Suede Loafer</h3>
+                  <p class="product-card__price">
+                    <span class="price--sale">$79.99</span>
+                    <span class="price--original">$99.99</span>
+                  </p>
+                </div>
+              </a>
+              <button class="btn btn--secondary">Add to Cart</button>
+            </article>
+
+            <!-- Product Card 2: Women's Sandal on Sale -->
+            <article class="product-card">
+              <a href="#">
+                <img
+                  src="products/women-sandal.jpg"
+                  alt="A pair of stylish summer sandals."
+                  class="product-card__image"
+                />
+                <div class="product-card__info">
+                  <h3 class="product-card__name">Summer Sandal</h3>
+                  <p class="product-card__price">
+                    <span class="price--sale">$59.99</span>
+                    <span class="price--original">$79.99</span>
+                  </p>
+                </div>
+              </a>
+              <button class="btn btn--secondary">Add to Cart</button>
+            </article>
+
+            <!-- Product Card 3: Classic Sneaker on Sale -->
             <article class="product-card">
               <a href="#">
                 <img
@@ -94,48 +116,34 @@
                 />
                 <div class="product-card__info">
                   <h3 class="product-card__name">Classic Sneaker</h3>
-                  <p class="product-card__price">$89.99</p>
+                  <p class="product-card__price">
+                    <span class="price--sale">$69.99</span>
+                    <span class="price--original">$89.99</span>
+                  </p>
                 </div>
               </a>
               <button class="btn btn--secondary">Add to Cart</button>
             </article>
 
-            <!-- Product Card 2 -->
+            <!-- Product Card 4: Kids Sneaker on Sale -->
             <article class="product-card">
               <a href="#">
                 <img
-                  src="products/leatherBoot.jpg"
-                  alt="A stylish brown leather boot."
+                  src="products/kids-sneaker.jpg"
+                  alt="A pair of colorful sneakers for kids."
                   class="product-card__image"
                 />
                 <div class="product-card__info">
-                  <h3 class="product-card__name">Leather Boot</h3>
-                  <p class="product-card__price">$149.99</p>
+                  <h3 class="product-card__name">Playful Kicks</h3>
+                  <p class="product-card__price">
+                    <span class="price--sale">$44.99</span>
+                    <span class="price--original">$59.99</span>
+                  </p>
                 </div>
               </a>
               <button class="btn btn--secondary">Add to Cart</button>
             </article>
           </div>
-        </div>
-      </section>
-
-      <!-- Newsletter/Promo Section -->
-      <section class="promo-section" aria-labelledby="promo-title">
-        <div class="container">
-          <h2 id="promo-title">Join Our Newsletter</h2>
-          <p>
-            Get 15% off your first order and stay up-to-date with our latest
-            arrivals.
-          </p>
-          <form class="newsletter-form">
-            <label for="email-signup" class="sr-only">Email address</label>
-            <input
-              type="email"
-              id="email-signup"
-              placeholder="Enter your email"
-            />
-            <button type="submit" class="btn btn--primary">Subscribe</button>
-          </form>
         </div>
       </section>
     </main>

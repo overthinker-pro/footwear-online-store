@@ -289,6 +289,19 @@ section {
     width: calc(100% - 3rem);
 }
 
+.price--sale {
+    color: #D90429; /* A strong red for sale price */
+    font-weight: 700;
+}
+
+.price--original {
+    text-decoration: line-through;
+    color: var(--text-color);
+    font-size: 0.9em;
+    margin-left: 8px;
+    opacity: 0.7;
+}
+
 
 /* --- Promo Section --- */
 .promo-section {
